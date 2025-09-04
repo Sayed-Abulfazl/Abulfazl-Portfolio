@@ -8,8 +8,12 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 import { Autoplay, EffectCoverflow, } from 'swiper/modules'
+import Picture from './Picture'
+import { useState } from 'react'
 
 export default function SwiperSlider({ srcs }) {
+    const [image, setImage] = useState(null);
+
     return (
         <div>
             <Swiper
@@ -33,10 +37,14 @@ export default function SwiperSlider({ srcs }) {
             >
                 {srcs.map((src, index) => (
                     <SwiperSlide key={index}>
-                        <img src={src} alt={src} className="h-auto w-full object-cover" />
+                        <img src={src} alt={src} onClick={() => setImage(src)} className="h-auto w-full object-cover" />
                     </SwiperSlide>
                 ))}
             </Swiper>
+            {
+                image &&
+                <Picture image={image} setImage={setImage} />
+            }
         </div >
     )
 }
