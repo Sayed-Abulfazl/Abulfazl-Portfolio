@@ -27,13 +27,13 @@ export default function SwiperSlider({ srcs }) {
                     modifier: 3,
                 }}
                 autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false
                 }}
             >
-                {srcs.map((src, i) => (
-                    <SwiperSlide>
-                        <img key={i} src={src} alt={src} className="h-auto w-full object-cover" />
+                {srcs.map((src, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={src} alt={src} className="h-auto w-full object-cover" />
                     </SwiperSlide>
                 ))}
             </Swiper>

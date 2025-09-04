@@ -34,7 +34,7 @@ export default function Hero() {
                 className="mt-26 lg:mt-32 font-semibold text-[5vw] lg:text-5xl"
                 variants={child}
             >
-                Hi, I 'm <span className={`uppercase ${mode === 'dark' ? "datx" : "litx"}`}>Sayed Abulfazl Hussaini</span>
+                Hi, I &apos;m <span className={`uppercase ${mode === 'dark' ? "datx" : "litx"}`}>Sayed Abulfazl Hussaini</span>
             </motion.h1>
             <motion.div variants={child} className='FCC flex-col text-[3vw] lg:text-[2vw] mt-4 font-light'>
 
@@ -63,12 +63,20 @@ export default function Hero() {
             >
                 {
                     mode === 'dark' && (
-                        <img src="/abulfazlDK.png" alt="Abulfazl" className='mt-8 w-full object-cover h-auto' />
+                        <img
+                            src="/abulfazlDK.png" 
+                            alt="Abulfazl" 
+                            className='mt-8 w-full object-cover h-auto' 
+                        />
                     )
                 }
                 {
                     mode === 'light' && (
-                        <img src="/abulfazlLG.png" alt="Abulfazl" className='mt-8 w-full object-cover h-auto' />
+                        <img
+                            src="/abulfazlLG.png" 
+                            alt="Abulfazl" 
+                            className='mt-8 w-full object-cover h-auto'
+                        />
                     )
                 }
             </motion.div>
