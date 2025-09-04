@@ -2,8 +2,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import { BsFastForwardBtn } from 'react-icons/bs'
-
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'

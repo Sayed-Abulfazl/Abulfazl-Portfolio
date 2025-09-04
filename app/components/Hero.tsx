@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import useTheme from "../context/useTheme"
 
 import { motion } from "framer-motion";

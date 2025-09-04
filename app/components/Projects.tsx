@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 import { myProjects } from "../constants";
 import useTheme from "../context/useTheme";
@@ -23,8 +25,6 @@ export default function Projects() {
         }
         return outputProjects;
     })
-
-    console.log(filterProjects);
 
     return (
         <section className="p-8" id="projects">

@@ -15,7 +15,7 @@ export default function About() {
 
             <div className="mt-8">
                 <a
-                    href="/abulfazlCV.png"
+                    href="/abulfazlCV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     download
