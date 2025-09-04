@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root{
+    background-color: rgb(0, 0, 0);
+}
+
+.FCC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datx{
+    color: rgb(179, 255, 71);
+}
+.litx{
+    color: rgb(255, 45, 12);
+}
+
+.TD500{
+    transition: all;
+    transition-duration: 500ms;
+}
