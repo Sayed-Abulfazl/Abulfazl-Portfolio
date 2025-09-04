@@ -36,7 +36,7 @@ export default function Hero() {
             >
                 Hi, I &apos;m <span className={`uppercase ${mode === 'dark' ? "datx" : "litx"}`}>Sayed Abulfazl Hussaini</span>
             </motion.h1>
-            <motion.div variants={child} className='FCC flex-col text-[3vw] lg:text-[2vw] mt-4 font-light'>
+            <motion.div variants={child} className='FCC flex-col text-[4vw] lg:text-[2vw] mt-4 font-light'>
 
                 <p
                     className=''
