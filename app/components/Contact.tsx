@@ -1,3 +1,5 @@
+"use client"
+
 import { CONTACT, social_media_links } from "../constants";
 import useTheme from "../context/useTheme";
 
