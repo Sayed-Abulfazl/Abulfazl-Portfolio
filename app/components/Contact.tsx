@@ -28,7 +28,7 @@ export default function Contact(){
                 ))}
             </div>
             <p className="my-8 text-center text-gray-400">
-               &copy; compileTab All rights reserved
+               &copy; Abulfazl All rights reserved {new Date().getFullYear()}
             </p>
         </section>
     )

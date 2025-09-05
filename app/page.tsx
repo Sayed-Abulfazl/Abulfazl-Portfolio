@@ -25,14 +25,16 @@ export default function Home() {
       <Works />
       <Contact />
 
-      <a
-        href=""
-        className={`fixed FCC animate-bounce z-80 lg:text-5xl bottom-3  w-full text-3xl  ${mode === 'dark' ? 'text-white' : "text-black"}`}
-        onClick={(e) => scrollToSection(e, 'home')}
-      >
-        <BsArrowUpCircle
-        />
-      </a>
+      <div className="w-full FCC">
+        <a
+          href=""
+          className={`fixed animate-bounce z-80 lg:text-5xl bottom-3 text-3xl  ${mode === 'dark' ? 'text-white' : "text-black"}`}
+          onClick={(e) => scrollToSection(e, 'home')}
+        >
+          <BsArrowUpCircle
+          />
+        </a>
+      </div>
     </div>
   )
 }

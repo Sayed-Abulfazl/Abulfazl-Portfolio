@@ -33,7 +33,7 @@ export default function Projects() {
                 {categories.map((cat, i) => (
                     <span
                         key={i}
-                        className={`cursor-pointer TD500 FCC lg:w-[170px] w-[100px] lg:text-2xl font-semibold ${cat === activeCategory ? 'bg-lime-400 text-black' : mode === 'dark' ? 'bg-slate-500' : "bg-slate-200"} rounded-full py-2`}
+                        className={`cursor-pointer TD500 FCC lg:w-[170px] w-[100px] lg:text-2xl font-semibold ${cat === activeCategory ? 'bg-green-400 text-black' : mode === 'dark' ? 'bg-slate-500' : "bg-slate-200"} rounded-full py-2`}
                         onClick={() => setActiveCategory(cat)}
                     > {cat} </span>
                 ))}

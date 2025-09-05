@@ -1,27 +1,32 @@
+'use client'
 
+import { useState } from "react";
 import useTheme from "../context/useTheme"
 
 import { motion } from "framer-motion";
+import Picture from "./Picture";
 
-    const container = {
-        hidden : { opacity : 0 },
-        visible : { 
-            opacity : 1,
-            transition : {
-                staggerChildren : 0.3,
-                delayChildren : 0.2,
-            },
-         },
-    };
+const container = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.3,
+            delayChildren: 0.2,
+        },
+    },
+};
 
-    const child = {
-        hidden : { opacity : 0 , y : -30 },
-        visible : { opacity : 1 , y : 0 , transition : { duration : 0.6 } }
-    }
+const child = {
+    hidden: { opacity: 0, y: -30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+}
 
 export default function Hero() {
     const { mode, scrollToSection } = useTheme();
     
+    const [image, setImage] = useState(null);
+
     return (
         <motion.div
             className="FCC flex-col gap-4"
@@ -53,33 +58,39 @@ export default function Hero() {
             >
                 <a
                     href="#projects"
-                    onClick={(e) => scrollToSection(e,'projects')}
+                    onClick={(e) => scrollToSection(e, 'projects')}
                     className={`px-3 py-1 lg:text-xl ${mode === 'dark' ? "bg-lime-300 text-black hover:bg-lime-400" : "bg-orange-700 text-white hover:bg-orange-800"} font-bold rounded-xl`}
                 >View my works</a>
             </motion.div>
             <motion.div
-                className='w-full'
+                className='w-full cursor-pointer'
                 variants={child}
             >
                 {
                     mode === 'dark' && (
                         <img
-                            src="/abulfazlDK.png" 
-                            alt="Abulfazl" 
-                            className='mt-8 w-full object-cover h-auto' 
+                            src="/abulfazlDK.png"
+                            alt="Abulfazl"
+                            className='mt-8 w-full object-cover h-auto'
+                            onClick={() => setImage('/abulfazlDK.png')}
                         />
                     )
                 }
                 {
                     mode === 'light' && (
                         <img
-                            src="/abulfazlLG.png" 
-                            alt="Abulfazl" 
+                            src="/abulfazlLG.png"
+                            alt="Abulfazl"
                             className='mt-8 w-full object-cover h-auto'
+                            onClick={() => setImage('/abulfazlLG.png')}
                         />
                     )
                 }
             </motion.div>
+            {
+                image &&
+                <Picture image={image} setImage={setImage} />
+            }
         </motion.div>
     )
 }
