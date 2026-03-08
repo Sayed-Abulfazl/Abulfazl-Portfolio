@@ -8,7 +8,7 @@ import SwiperSlide from "./SwiperSlider";
 export default function Projects() {
 
     const { mode } = useTheme();
-    const categories = ['All', 'Frontend', 'Backend'];
+    const categories = ['All', 'Frontend', 'Backend', 'Apps'];
 
     const [activeCategory, setActiveCategory] = useState(localStorage.getItem('cat') || categories[0]);
 
@@ -49,6 +49,7 @@ export default function Projects() {
                                         <h3 className={`text-xl lg:text-3xl pb-4 font-semibold ${mode === 'dark' ? "datx" : "litx"}`}> {project.title} </h3>
                                         <p className="text-lg"> {project.discription} </p>
                                     </div>
+                                    <p className={`text-sm pb-3 px-3 ${mode === 'dark' ? "datx" : "litx"}`}>Developed by {project.by} </p>
                                 </a>
                             </div>
                         </div>

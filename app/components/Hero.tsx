@@ -24,7 +24,7 @@ const child = {
 
 export default function Hero() {
     const { mode, scrollToSection } = useTheme();
-    
+
     const [image, setImage] = useState(null);
 
     return (
@@ -69,20 +69,20 @@ export default function Hero() {
                 {
                     mode === 'dark' && (
                         <img
-                            src="/abulfazlDK.png"
+                            src="/abulfazlDK.webp"
                             alt="Abulfazl"
                             className='mt-8 w-full object-cover h-auto'
-                            onClick={() => setImage('/abulfazlDK.png')}
+                            onClick={() => setImage('/abulfazlDK.webp')}
                         />
                     )
                 }
                 {
                     mode === 'light' && (
                         <img
-                            src="/abulfazlLG.png"
+                            src="/abulfazlLG.webp"
                             alt="Abulfazl"
                             className='mt-8 w-full object-cover h-auto'
-                            onClick={() => setImage('/abulfazlLG.png')}
+                            onClick={() => setImage('/abulfazlLG.webp')}
                         />
                     )
                 }
