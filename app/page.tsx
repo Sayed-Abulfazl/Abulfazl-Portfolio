@@ -28,7 +28,7 @@ export default function Home() {
       <div className="w-full FCC">
         <a
           href=""
-          className={`fixed animate-bounce z-80 lg:text-5xl bottom-3 text-3xl  ${mode === 'dark' ? 'text-white' : "text-black"}`}
+          className={`fixed animate-bounce z-80 lg:text-5xl bottom-4 text-3xl  ${mode === 'dark' ? 'text-white' : "text-black"}`}
           onClick={(e) => scrollToSection(e, 'home')}
         >
           <BsArrowUpCircle
