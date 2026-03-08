@@ -8,7 +8,7 @@ import SwiperSlide from "./SwiperSlider";
 export default function Projects() {
 
     const { mode } = useTheme();
-    const categories = ['All', 'Frontend', 'Backend', 'Apps'];
+    const categories = ['All', 'Front', 'Back', 'Apps'];
 
     const [activeCategory, setActiveCategory] = useState(localStorage.getItem('cat') || categories[0]);
 

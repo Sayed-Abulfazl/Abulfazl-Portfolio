@@ -31,7 +31,7 @@ const myProjects = [
             '/My Project Images/WeatherApp-3.webp',
         ],
         link: 'https://weather-app-two-iota-17.vercel.app/',
-        kind: 'Frontend',
+        kind: 'Front',
         by: 'Next.js'
     },
     {
@@ -43,7 +43,7 @@ const myProjects = [
             '/My Project Images/Basic-Calculator-3.png',
         ],
         link: 'https://basic-calculator-next-theta.vercel.app/',
-        kind: 'Frontend',
+        kind: 'Front',
         by: 'Next.js'
     },
     {
@@ -55,7 +55,7 @@ const myProjects = [
             '/My Project Images/Shopping-Cart-3.png',
         ],
         link: 'https://shopping-cart-ecru-theta.vercel.app/',
-        kind: 'Frontend',
+        kind: 'Front',
         by: 'Next.js'
     },
     {
@@ -67,7 +67,7 @@ const myProjects = [
             '/My Project Images/openNote-3.webp',
         ],
         link: 'https://open-note-2025.vercel.app/',
-        kind: 'Backend',
+        kind: 'Back',
         by: 'Next.js'
     },
     {
@@ -77,7 +77,7 @@ const myProjects = [
             '/My Project Images/travel-app.webp',
         ],
         link: 'https://travel-app-2025.vercel.app/',
-        kind: 'Frontend',
+        kind: 'Front',
         by: 'Next.js'
     },
     {
@@ -87,7 +87,7 @@ const myProjects = [
             '/My Project Images/library.webp',
         ],
         link: 'https://library-aba-saleh.vercel.app/',
-        kind: 'Frontend',
+        kind: 'Front',
         by: 'JavaScript'
     },
     {
@@ -97,7 +97,7 @@ const myProjects = [
             '/My Project Images/shop.webp',
         ],
         link: 'https://my-shop-js2025.vercel.app/',
-        kind: 'Frontend',
+        kind: 'Front',
         by: 'JavaScript'
     },
     {
@@ -107,7 +107,7 @@ const myProjects = [
             '/My Project Images/alarm-clock.webp',
         ],
         link: 'https://alarm-clock-js2025.vercel.app/',
-        kind: 'Frontend',
+        kind: 'Front',
         by: 'JavaScript'
     },
     {
